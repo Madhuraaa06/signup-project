@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const {MongoUri} = process.env
+const {MongoUri} = 'mongodb+srv://ayushdarade06:Madhura@cluster0.4zd7ked.mongodb.net/todolist'
 
 const ConnectToMongo = ()=>{
     try {
