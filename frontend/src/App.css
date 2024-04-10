@@ -1,0 +1,46 @@
+
+
+body{
+  background-color: #282c34ed;
+}
+.completed {
+  text-decoration: line-through;
+}
+
+.completed-text {
+  text-decoration: line-through;
+  /* Additional styles for completed text */
+}
+.text-centre{
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 3%;
+}
+.container{
+  max-width : 40%;
+  height: auto;
+  padding:10px;
+  background-color: rgba(27, 26, 26, 0.755);
+  border-radius: 5px;
+}
+.form-label{
+  color: beige;
+}
+.form-control{
+  width:90%;
+  align-items: center
+}
+.mb-3{
+  align-items: center;
+  padding-left:20px;
+  
+}
+.card{
+  background-color: transparent;
+}
+.fs-3{
+  color: rgba(245, 245, 245, 0.863);
+}
+.fs-7{
+  color: rgba(245, 245, 245, 0.734);
+}
