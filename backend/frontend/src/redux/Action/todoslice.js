@@ -12,7 +12,7 @@ const initialState = {
 // Define an async thunk for fetching data
 export const fetchTodos = createAsyncThunk('fetchTodos', async () => {
   try {
-    const response = await fetch("http://localhost:8000/getall",{
+    const response = await fetch(`${window.location.origin}/getall`,{
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export const fetchTodos = createAsyncThunk('fetchTodos', async () => {
 // adding task to the list
 export const addTask = createAsyncThunk('addTask', async (newTask) => {
   try {
-    const response = await fetch('http://localhost:8000/add', {
+    const response = await fetch(`${window.location.origin}/add`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export const addTask = createAsyncThunk('addTask', async (newTask) => {
 // deleting task
 export const deleteTask = createAsyncThunk('deleteTask', async (taskId) => {
   try {
-    const response = await fetch(`http://localhost:8000/delete/${taskId}`, {
+    const response = await fetch(`${window.location.origin}/delete/${taskId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ export const updateTaskStatus = createAsyncThunk(
   'updateTaskStatus',
   async ({ taskId, done }) => {
     try {
-      const response = await fetch(`http://localhost:8000/update/${taskId}`, {
+      const response = await fetch(`${window.location.origin}/update/${taskId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
